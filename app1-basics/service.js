@@ -1,5 +1,3 @@
-angular
-.module("app")
-.service("service", function(){
-
+angular.module("app").service("service", function($http) {
+  
 });
