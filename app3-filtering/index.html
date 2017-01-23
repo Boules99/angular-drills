@@ -1,15 +1,13 @@
 <html ng-app="app">
-	<body ng-controller="mainCtrl">
-		<section>
-			<h1>SORT IT OUT AMONG YOURSELVES</h1>
-			<input type="text" placeholder="Filter..." ng-model="filterValue">
-			<div ng-repeat="employee in employees | filter: filterValue">
-				<div>{{employee.name}}</div>
-				<div>{{employee.email}}</div>
-				<div>{{employee.dateEmployed}}</div>
-				<div>{{employee.phone}}</div>
-				<br />
-			</div>
+	<body ng-controller="soControlling">
+		<h1>Find an employee</h1>
+		<input type="text" placeholder="Filter..." ng-model="filterValue"/>
+		<section ng-repeat="employee in employees | filter: filterValue" style="margin: 10px">
+			<div>Name: {{employee.name}}</div>
+			<div>Email: {{employee.email}}</div>
+			<div>Date hired: {{employee.dateEmployed}}</div>
+			<div>Phone: {{employee.phone}}</div>
+			<br />
 		</section>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>

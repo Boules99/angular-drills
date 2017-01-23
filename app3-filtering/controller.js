@@ -1,7 +1,7 @@
 angular
 .module("app")
-.controller("mainCtrl", function($scope, service){
+.controller("soControlling", function($scope, service){
 
-$scope.employees = service.myData;
+  $scope.employees = service.myData;
 
 });
