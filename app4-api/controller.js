@@ -1,12 +1,12 @@
 angular
-.module("apiApp")
+.module("app")
 .controller("mainCtrl", function($scope, service){
 
 
-service.getVehicles().then(function(response){
-  console.log(response);
-  $scope.vehicles = response.data.results;
-})
+  service.getPokemans().then(function(response){
+      //console.log(response.data.results);
+      $scope.pokemans = response.data.results;
+  })
 
 
 });

@@ -1,24 +1,14 @@
 angular
-.module("apiApp")
+.module("app")
 .service("service", function($http){
 
-var URL = "http://swapi.co/api/"
+var basicUrl = "http://pokeapi.co/api/v2/"
 
-
-
-
-this.getVehicles = function() {
+this.getPokemans = function() {
   return $http({
     method: "GET",
-    url: URL + "vehicles/"
-  })
+    url: basicUrl + "pokemon/"
+  });
 }
-
-
-// this.randomizer = function() {
-//   var randomNumber = Math.floor((Math.random() * 38) + 2);
-//   console.log(randomNumber);
-//   return randomNumber;
-// }
 
 });

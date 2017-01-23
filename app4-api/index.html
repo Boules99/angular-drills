@@ -1,8 +1,9 @@
-<html ng-app="apiApp">
+<html ng-app="app">
 	<body ng-controller="mainCtrl">
-		<h1>WATCHA GONNA FLY?</h1>
-		<div ng-repeat="vehicle in vehicles">
-			{{vehicle.name}}
+		<div ng-repeat="pokemon in pokemans">
+				<div class="">
+					Name: {{pokemon.name}}
+				</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
