@@ -9,6 +9,10 @@
 	overflow: hidden;
 }
 
-h1 {
+h1, h2 {
 	text-align: center;
+	line-height: .75
+}
+h1 {
+	margin-top: 20px;
 }

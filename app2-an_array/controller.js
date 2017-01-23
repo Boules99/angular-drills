@@ -1,8 +1,8 @@
 angular
-.module("arrayApp")
-.controller("arrayController", function($scope, service){
+.module("app")
+.controller("controller", function($scope, service){
 
+  $scope.employees = service.myData;
 
-$scope.employees = service.myData;
 
 });

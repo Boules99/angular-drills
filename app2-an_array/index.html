@@ -1,18 +1,16 @@
-<html ng-app="arrayApp">
+<html ng-app="app">
 	<head>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
-	<body ng-controller="arrayController">
-		<section>
-			<h1>Employee Roster</h1>
-			<div class="row" ng-repeat="employee in employees">
-				<div class="personData">{{employee.name}}</div>
-				<div class="personData">{{employee.email}}</div>
-				<div class="personData">{{employee.dateEmployed}}</div>
-				<div class="personData">{{employee.phone}}</div>
-			</div>
-		</section>
-
+	<body ng-controller="controller">
+		<h1>THE MISFITS</h1>
+		<h2>in order of appearance</h2>
+		<div class="row" ng-repeat="employee in employees">
+			<div class="personData">{{employee.name}}</div>
+			<div class="personData">{{employee.email}}</div>
+			<div class="personData">{{employee.dateEmployed}}</div>
+			<div class="personData">{{employee.phone}}</div>
+		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

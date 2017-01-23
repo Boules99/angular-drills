@@ -1,2 +1,2 @@
 angular
-.module("arrayApp", [])
+.module("app", [])

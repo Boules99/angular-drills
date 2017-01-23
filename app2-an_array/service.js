@@ -1,6 +1,7 @@
 angular
-.module("arrayApp")
+.module("app")
 .service("service", function(){
+
 
 this.myData = [
 	{"name": "Aileen Jacobs", "email": "convallis.ante.lectus@euneque.co.uk", "dateEmployed": "01/01/2016", "phone": "1-862-996-4921"},
