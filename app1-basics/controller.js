@@ -1,7 +1,7 @@
 angular
 .module("app")
-.controller("mainCtrl", function($scope, service){
+.controller("mainCtrl", function($scope){
 
-  $scope.nameSpace = '';
+  $scope.yourMessage = '';
 
 });

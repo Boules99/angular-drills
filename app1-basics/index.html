@@ -1,11 +1,9 @@
 <html ng-app="app">
+	<link rel="stylesheet" href="style.css">
 	<body ng-controller="mainCtrl">
-		<div>
-			<input type="text" placeholder="Your name" ng-model="nameSpace">
-		</div>
-		<div>
-			{{nameSpace}}
-		</div>
+		<h1>Send a message into the digital void!</h1>
+		<input type="text" placeholder="Your message" ng-model="yourMessage">
+		<div>{{yourMessage}}</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
