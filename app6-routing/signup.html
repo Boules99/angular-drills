@@ -1,0 +1,14 @@
+<button type="button" name="button" ui-sref="home">Home</button>
+<button type="button" name="button" ui-sref="details">Details</button>
+
+<form ng-submit='signIn(user)'>
+<p>
+  username: <input ng-model="user.username" required/>
+</p>
+
+<p>
+  password: <input ng-model="user.password" type="password" required />
+</p>
+<button ng-click='signIn(user)'>Sign in</button>
+
+</form>
