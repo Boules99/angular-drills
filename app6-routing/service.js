@@ -1,0 +1,15 @@
+angular.module('routing')
+.service('mainService', function ($http, $q) {
+
+  this.getPlanets = function() {
+    return $http({
+      method: 'GET',
+      url: 'http://swapi.co/api/planets'
+    }).then(function(response){
+      console.log(response)
+      return response;
+    })
+  }
+
+
+})
